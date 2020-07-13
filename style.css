@@ -1,0 +1,37 @@
+.wrap {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.box {
+    flex-basis: initial;
+    width:150px;
+    height:150px;
+    margin:50px 50px;
+    background-color: black;
+    color:white;
+    text-align: center;
+    font-size: 2em;
+    vertical-align: middle;
+    transition-property: opacity;
+    opacity:1;
+}
+
+.box p {
+    margin-top:30%;
+    margin-bottom:30%;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+/* animations by div */
+
+.opacity:hover {
+    transition-duration: 1s;
+    opacity: 0;
+}
