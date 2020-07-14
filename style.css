@@ -13,9 +13,8 @@
     background-color: black;
     color:white;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     vertical-align: middle;
-    /* transition-property: opacity; */
     opacity:1;
 }
 
@@ -43,5 +42,60 @@ h1 {
 
 .rotate:hover {
     transform: rotate(90deg);
+    transition:transform 1s ease;
 }
 
+.rotate-transform-origin:hover {
+    transform-origin: top left;
+    transform: rotate(360deg);
+    transition:transform 2s linear;
+}
+
+.skew:hover {
+    transform:skewX(15deg);
+}
+
+.scaleup:hover {
+    transform:scale(2);
+    transition: transform 1s ease;
+}
+
+.scaledown:hover {
+    transform:scale(0.1);
+    transition: transform 1s ease;
+}
+
+.scalex:hover {
+    transform:scale(1.5,1);
+    transition: transform 1s ease;
+}
+
+.scaley:hover {
+    transform:scale(1,2);
+    transition: transform 1s ease;
+}
+
+.translatex:hover {
+    transform: translateX(200px);
+    transition: transform 1s ease;
+}
+
+.translatey:hover {
+    transform: translateY(200px);
+    transition: transform 1s ease;
+}
+
+.translatexy:hover {
+    transform: translate(-200px,-200px);
+    transition:transform 1s ease;
+}
+
+.slidep {
+    padding-top:25px;
+}
+
+/* target child element on hover */
+.slide:hover > .slidep {
+    transform:translateX(100px);
+    transition:transform 1s ease;
+}
